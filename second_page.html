@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+        body{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+div {
+    color: azure;
+    font-size: 80px;
+    text-align: center;
+    margin-top: -100px;
+    text-transform: uppercase;
+    font-family: "DejaVu Sans Mono, monospace";
+    font-weight: 700;
+    position: relative;
+    animation: mymove 0.5s 1;
+    animation-fill-mode: forwards;
+}
+
+
+.image1 {
+  background-image: url("pawn.png");
+  background-position: 94% 28%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 140px;
+  animation: test;
+  animation-duration: 5s;
+  animation-fill-mode: forwards; 
+}
+
+.image2 {
+  background-image: url("knight.png");
+  background-position: 5% 25%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 180px;
+  animation: test;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+
+.image3 {
+  background-image: url("bishop.png");
+  background-position: 5% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 200px;
+  animation: test;
+  animation-duration: 11s;
+  animation-fill-mode: forwards;
+}
+
+.image4 {
+  background-image: url("rook.png");
+  background-position: 95% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 180px;
+  animation: test;
+  animation-duration: 14s;
+  animation-fill-mode: forwards;
+}
+
+.image5 {
+  background-image: url("queen.png");
+  background-position: 60% 35%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 250px;
+  animation: test2;
+  animation-duration: 17s;
+  animation-fill-mode: forwards;
+}
+
+.image6 {
+  background-image: url("king.png");
+  background-position: 40% 35%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 250px;
+  animation: test2;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 450px;}
+}
+
+@keyframes test {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1
+  }  
+}
+@keyframes test2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1
+  }
+}
+</style>
+</head>
+<body>
+
+<div>Tee oma valik</div>
+<div class="image1"></div>
+<div class="image2"></div>
+<div class="image3"></div>
+<div class="image4"></div>
+<div class="image5"></div>
+<div class="image6"></div>
+</body>
+</html>
