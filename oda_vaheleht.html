@@ -1,9 +1,61 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Kuidas mängida malet</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="oda.css">
+    <link rel="stylesheet" href="ühine_stiil.css">
 </head>
+<style>
+    h1 {
+    margin-top: 40px;
+    margin-left: 315px; 
+    font-size: 70px; 
+    color: azure;
+    text-transform: uppercase;
+    font-family: "DejaVu Sans Mono, monospace";
+    font-weight: 700;
+
+}
+    .bishop{
+    background-image: url("bishop.png");
+    background-repeat: no-repeat;
+    left: 30%;
+    top: 34.5%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-size: 60px;
+    animation: move 7s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes move {
+    0% {
+        left: 30%;
+        top: 34.5%;
+    }
+    14% {
+        left: 10.5%;
+        top: 74%; 
+    }
+    28% {
+        left: 38%;
+        top: 18.5%; 
+    }
+    42% {
+        left: 30%;
+        top: 34.5%;
+    }
+    66% {
+        left: 22.2%;
+        top: 18.5%;
+    }
+    83% {
+        left: 37.8%;
+        top: 50.5%;
+    }
+  }
+</style>
 
 <body class="body">
     <div>
