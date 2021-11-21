@@ -1,10 +1,66 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Kuidas mängida malet</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="vanker.css">
+    <link rel="stylesheet" href="ühine_stiil.css">
 </head>
+<style>
+    h1 {
+    margin-top: 40px;
+    margin-left: 250px; 
+    font-size: 70px; 
+    color: azure;
+    text-transform: uppercase;
+    font-family: "DejaVu Sans Mono, monospace";
+    font-weight: 700;
 
+}
+    .rook{
+    background-image: url("rook.png");
+    background-repeat: no-repeat;
+    left: 30%;
+    top: 33.5%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-size: 60px;
+    animation: move 7s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes move {
+    0% {
+        left: 30%;
+        top: 33.5%;
+    }
+    15% {
+        left: 30%;
+        top: 17.8%;
+    }
+    30% {
+        left: 30%;
+        top: 73.3%;
+    }
+    45% {
+        left: 30%;
+        top: 33.5%;
+    }
+    60% {
+        left: 37.8%;
+        top: 33.5%;
+    }
+    80% {
+        left: 10.4%;
+        top: 33.5%;
+    }
+    100% {
+        left: 30%;
+        top: 33.5%;
+    }
+  
+  }
+</style>
 <body class="body">
     <div>
         <h1>vanker</h1>
